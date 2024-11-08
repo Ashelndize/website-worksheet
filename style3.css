@@ -1,0 +1,137 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container for centering content */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #0bc2ff;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+    text-align: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+    text-align: center;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 0;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size:large;
+    
+   
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* Courses Section */
+.course-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.course {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    width: 23%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.course h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.course p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.course:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .course-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    text-align: center;
+}

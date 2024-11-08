@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Tech School</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Smooth Scroll Behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Container for the Page */
+        .container {
+            width: 100%;
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Section Styles */
+        section {
+            margin-bottom: 50px;
+            padding: 40px 0;
+        }
+
+        /* About Section */
+        .about {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .about-text {
+            flex: 1;
+            padding: 20px;
+            max-width: 500px;
+        }
+
+        .about-text h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .about-image {
+            flex: 1;
+            max-width: 500px;
+            padding: 20px;
+            text-align: center;
+            animation: slideIn 1.5s ease-out;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Mission and Vision Section */
+        .mission-vision {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 40px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .mission-vision div {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .mission-vision div h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .mission-vision div p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Animation for fading in */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Animation for sliding in */
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Animation for fading up */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #2980b9;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .about {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .mission-vision {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+    </style>
+     <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header class="header">
+        <h2 align="center"> About us</h2>
+        <p align="center">IMENA Technology school</p>
+    
+    
+     
+                <div class="navbar-right">
+    
+                        
+            <nav>
+                <ul>
+                    
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="admission.html">Admissions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <div class="search-container">
+                    
+                </ul>
+            </nav>
+            
+    </header>
+    <div class="container">
+        <!-- About Us Section -->
+        <section id="about">
+            <div class="about">
+                <div class="about-text">
+                    <h2>About Our Technology School</h2>
+                    <p>We are a leading institution in the field of technology education, providing students with the skills, knowledge, and tools they need to succeed in the ever-evolving tech world. Our courses focus on practical applications, hands-on experience, and innovation.</p>
+                    <p>Our mission is to shape the next generation of technology leaders through cutting-edge curriculum, dedicated instructors, and a commitment to student success.</p>
+                </div>
+                <div class="about-image">
+                    <img src="2.jfif" alt="Tech School Campus">
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission and Vision Section -->
+        <section id="mission-vision">
+            <div class="mission-vision">
+                <div>
+                    <h3>Our Mission</h3>
+                    <p>To provide exceptional education in technology and innovation, empowering students to succeed in a global, tech-driven economy.</p>
+                </div>
+                <div>
+                    <h3>Our Vision</h3>
+                    <p>To be a world-class institution that nurtures creativity, critical thinking, and technical skills for the next generation of innovators.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2024 Tech School. All rights reserved. <a href="#about">Learn More</a></p>
+        </footer>
+    </div>
+
+</body>
+</html>

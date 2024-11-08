@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Admission Form</title>
+    <link rel="stylesheet" href="admission.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>School Admission Form</h1>
+            <p>Apply for admission to our school and begin your learning journey!</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">courses</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    <!-- Admission Form Section -->
+    <section id="admission-form">
+        <div class="container">
+            <h2>Admission Application</h2>
+            <form action="#" method="POST">
+                <!-- Personal Details -->
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="contact-number">Contact Number:</label>
+                    <input type="tel" id="contact-number" name="contact-number" placeholder="Enter your phone number" required>
+                </fieldset>
+
+                <!-- Address Details -->
+                <fieldset>
+                    <legend>Address Details</legend>
+                    <label for="address">Permanent Address:</label>
+                    <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" placeholder="Enter your city" required>
+
+                    <label for="zipcode">ZIP Code:</label>
+                    <input type="text" id="zipcode" name="zipcode" placeholder="Enter your ZIP code" required>
+                </fieldset>
+
+                <!-- Academic Details -->
+                <fieldset>
+                    <legend>Academic Details</legend>
+                    <label for="previous-school">Previous School Name:</label>
+                    <input type="text" id="previous-school" name="previous-school" placeholder="Enter your previous school name" required>
+
+                    <label for="grade">Last Grade/Level Attended:</label>
+                    <input type="text" id="grade" name="grade" placeholder="Enter your last grade" required>
+
+                    <label for="course">Course of Interest:</label>
+                    <select id="course" name="course" required>
+                        <option value="computer-science">Computer Science</option>
+                        <option value="data-science">Data Science</option>
+                        <option value="web-development">Web Development</option>
+                        <option value="cybersecurity">Cybersecurity</option>
+                        <option value="software-engineering">Software Engineering</option>
+                    </select>
+                </fieldset>
+
+                <!-- Emergency Contact -->
+                <fieldset>
+                    <legend>Emergency Contact</legend>
+                    <label for="emergency-name">Emergency Contact Name:</label>
+                    <input type="text" id="emergency-name" name="emergency-name" placeholder="Enter the emergency contact name" required>
+
+                    <label for="emergency-phone">Emergency Contact Phone:</label>
+                    <input type="tel" id="emergency-phone" name="emergency-phone" placeholder="Enter emergency contact phone" required>
+                </fieldset>
+
+                <!-- Terms & Conditions -->
+                <fieldset>
+                    <label>
+                        <input type="checkbox" id="terms" name="terms" required>
+                        I agree to the terms and conditions
+                    </label>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="submit">Submit Application</button>
+                    <button type="reset">Reset Form</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 School Admission. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Button Example</title>
+    <style>
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container for the search input and button */
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Styling the Search Input Field */
+        .search-input {
+            padding: 10px;
+            font-size: 16px;
+            width: 250px;
+            border: 2px solid #3498db;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .search-input:focus {
+            border-color: #2980b9;
+        }
+
+        /* Styling the Search Button */
+        .search-button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        }
+
+        .search-button:hover {
+            transform: scale(1.1); /* Hover effect */
+            background-color: #2980b9;
+        }
+
+        .search-button:active {
+            transform: scale(0.95); /* Click effect */
+        }
+
+        /* Optional: Animation on the button when page loads */
+        .search-button {
+            animation: buttonFadeIn 1s ease-out;
+        }
+
+        @keyframes buttonFadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Search Container -->
+    <div class="search-container">
+        <!-- Input Field -->
+        <input type="text" class="search-input" placeholder="Search..." id="searchInput">
+        <!-- Search Button -->
+        <button class="search-button" onclick="performSearch()">Search</button>
+    </div>
+
+    <script>
+        // Function to handle the search action (you can modify this)
+        function performSearch() {
+            var searchQuery = document.getElementById('searchInput').value;
+            if (searchQuery.trim() === "") {
+                alert("Please enter a search term!");
+            } else {
+                alert("Searching for: " + searchQuery);
+                // You can add functionality to redirect or process the search here
+                // For example, redirect to a search page with the query:
+                // window.location.href = "search-results.html?q=" + searchQuery;
+            }
+        }
+    </script>
+

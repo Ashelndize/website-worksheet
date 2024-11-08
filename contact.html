@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Tech School</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #b6fff8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Form Container */
+        .contact-form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* Form Heading */
+        h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Input Fields */
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid #3498db;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #2980b9;
+            box-shadow: 0 0 8px rgba(41, 128, 185, 0.6);
+            outline: none;
+        }
+
+        /* Textarea Specific */
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Submit Button */
+        .submit-btn {
+            padding: 12px 25px;
+            background-color: #3498db;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #2980b9;
+            transform: scale(1.1);
+        }
+
+        /* Animation: Fade-in effect for form */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Shake Animation for invalid submission */
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            50% { transform: translateX(10px); }
+            75% { transform: translateX(-10px); }
+            100% { transform: translateX(0); }
+        }
+
+        /* Error Message */
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-top: -10px;
+        }
+    </style>
+    
+</head>
+<body>
+   
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+
+        <!-- Contact Form -->
+        <form id="contactForm" onsubmit="return validateForm()">
+            <div>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <div class="error" id="nameError"></div>
+            </div>
+
+            <div>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <div class="error" id="emailError"></div>
+            </div>
+
+            <div>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <div class="error" id="messageError"></div>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+
+    <script>
+        // Form Validation
+        function validateForm() {
+            let isValid = true;
+
+            // Reset errors
+            document.getElementById('nameError').textContent = '';
+            document.getElementById('emailError').textContent = '';
+            document.getElementById('messageError').textContent = '';
+
+            // Validate Name
+            const name = document.getElementById('name').value;
+            if (name.trim() === '') {
+                document.getElementById('nameError').textContent = 'Name is required.';
+                isValid = false;
+            }
+
+            // Validate Email
+            const email = document.getElementById('email').value;
+            const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+            if (!emailPattern.test(email)) {
+                document.getElementById('emailError').textContent = 'Please enter a valid email address.';
+                isValid = false;
+            }
+
+            // Validate Message
+            const message = document.getElementById('message').value;
+            if (message.trim() === '') {
+                document.getElementById('messageError').textContent = 'Message is required.';
+                isValid = false;
+            }
+
+            // If form is not valid, apply shake effect and return false
+            if (!isValid) {
+                document.getElementById('contactForm').classList.add('shake');
+                setTimeout(() => {
+                    document.getElementById('contactForm').classList.remove('shake');
+                }, 500);
+                return false;
+            }
+
+            // If form is valid, you can submit or send data here (e.g., Ajax request)
+            alert('Form submitted successfully!');
+            return true;  // Allow form submission
+      } 
+       
+    </script>
+<div><a href="index.html">goto Home</a></div>
+</body>
+</html>

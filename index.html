@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech School</title>
+    <link rel="stylesheet" href="stylecodes1.css">
+    <link rel="stylesheet" href="stylecodes2.css">
+    <style>
+        /* Body Styling */
+        
+
+        /* Container for Content */
+        .container {
+            text-align: center;
+        }
+
+        /* Animation for Fade-in Effect */
+        .fade-in {
+            animation: fadeIn 2s ease-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Animation for Bouncing Effect */
+        .bounce {
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        /* Animation for Color Change */
+        .color-change {
+            animation: colorChange 3s infinite;
+        }
+
+        @keyframes colorChange {
+            0% {
+                background-color: #3498db;
+                color: white;
+            }
+            50% {
+                background-color: #e74c3c;
+                color: black;
+            }
+            100% {
+                background-color: #3498db;
+                color: white;
+            }
+        }
+
+        /* Style for Buttons */
+        .button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Imena Technology School</h2>
+    
+        <nav>
+            <ul>
+                
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="admission.html">Admissions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <div class="search-container">
+                    
+                    <!-- Input Field -->
+                     <div align="right">
+                    <input type="text" class="search-input" placeholder="Search..." id="searchInput">
+                    <!-- Search Button -->
+                    <button class="search-button" onclick="performSearch()">Search</button>
+                </div>
+            
+                <script>
+                    // Function to handle the search action (you can modify this)
+                    function performSearch() {
+                        var searchQuery = document.getElementById('searchInput').value;
+                        if (searchQuery.trim() === "") {
+                            alert("Please enter a search term!");
+                        } else {
+                            alert("Searching for: " + searchQuery);
+                            // You can add functionality to redirect or process the search here
+                            // For example, redirect to a search page with the query:
+                            // window.location.href = "search-results.html?q=" + searchQuery;
+                        }
+                    }
+                </script>
+                </div>
+            </ul>
+        </nav>
+        
+    </header>
+    <img src="22.jpg">
+    <img src="21.jpg">
+    <img src="23.jpg">
+    
+    
+
+    <div class="intro" align="center" >
+        <h1 >Welcome to Our Technology School</h1>
+        <p>At our technology school, we offer a diverse range of courses designed to equip students with the skills needed to thrive in the ever-evolving tech landscape. From software development and data science to multimedia production and cybersecurity, our curriculum is tailored to meet the demands of the modern workforce. Our experienced instructors, hands-on projects, and state-of-the-art facilities ensure that you gain practical knowledge and experience that will set you apart in your career. Whether you’re looking to launch a new career or enhance your existing skills, our courses are designed to help you succeed in the dynamic world of technology.</p>
+    </div>
+    <div>
+        <div align="center" class="additional-info">
+            <h1>Explore Our Course Offerings</h1>
+            <p>In addition to our core programs, we also offer specialized courses in emerging technologies such as Artificial Intelligence, where you can dive into neural networks and deep learning; Internet of Things (IoT), focusing on connected devices and smart technologies; and Blockchain, which explores the fundamentals of decentralized systems and cryptocurrencies. Our hands-on workshops and collaborative projects foster a practical learning environment, ensuring you gain the experience needed to tackle real-world challenges. Whether you're a beginner or looking to upskill, our diverse range of courses will help you stay ahead in the fast-paced tech industry.</p>
+        </div>
+<div>
+    <img src="3.jpg" height="300px" width="300">
+    <img src="2.jfif"height="300px" width="300">
+    <img src="3.jpg" height="300px" width="300">
+    <img src="2.jfif"height="300px" width="300">
+    </div>
+    <marquee bgcolor="seablue">
+<p> you can also email us to the link 
+    <a href="mailto:ndizeyeasher@gmail.com">ImenaTechschool@gmail.com</a>
+</p>
+</marquee>
+<div>
+    <img src="1.jfif" height="300px" width="300">
+    <img src="4.jfif"height="300px" width="300">
+    
+    <img src="2.jfif"height="300px" width="300">
+    </div>
+    <footer>
+        <p>&copy; 2024 Tech School. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+

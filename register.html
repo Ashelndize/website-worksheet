@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology School Registration</title>
+    <link rel="stylesheet" href="stylecodes4.css">
+    <link rel="stylesheet" href="stylecodes5.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Technology School Registration</h1>
+            <p>Register for our exciting technology courses!</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">courses</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="registration-form">
+        <div class="container">
+            <h2>Student Registration Form</h2>
+            <form action="#" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <label for="course">Select Course:</label>
+                <select id="course" name="course" required>
+                    <option value="computer-science">Computer Science</option>
+                    <option value="multimedia">multimedia</option>
+                    <option value="engneering">engneering</option>
+                
+                </select>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="address">Home Address:</label>
+                <textarea id="address" name="address" placeholder="Enter your home address" required></textarea>
+
+                <div class="form-actions">
+                    <button type="submit">Register</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Technology School. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
